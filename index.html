@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micro Project 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p class="heading">calc</p>
+    <div class="flex-container">
+      <div class="container1">
+        <input type="text" id="display" placeholder="0" />
+      </div>
+
+      <div class="container2">
+        <button onclick="getNumber(7)" class="item-row1 item1">7</button>
+        <button onclick="getNumber(8)" class="item-row1 item2">8</button>
+        <button onclick="getNumber(9)" class="item-row1 item3">9</button>
+        <button onclick="deleteLast()" class="item-row1 item4">DEL</button>
+
+        <button onclick="getNumber(4)" class="item-row2 item5">4</button>
+        <button onclick="getNumber(5)" class="item-row2 item6">5</button>
+        <button onclick="getNumber(6)" class="item-row2 item7">6</button>
+        <button onclick="getOperator('+')" class="item-row2 item8">+</button>
+
+        <button onclick="getNumber(1)" class="item-row3 item9">1</button>
+        <button onclick="getNumber(2)" class="item-row3 item10">2</button>
+        <button onclick="getNumber(3)" class="item-row3 item11">3</button>
+        <button onclick="getOperator('-')" class="item-row3 item12">-</button>
+
+        <button onclick="getNumber()" class="item-row4 item13">.</button>
+        <button onclick="getNumber('0')" class="item-row4 item14">0</button>
+        <button onclick="getOperator('/')" class="item-row4 item15">/</button>
+        <button onclick="getOperator('*')" class="item-row4 item16">*</button>
+
+        <button onclick="clearDisplay()" class="item-row5 item17">RESET</button>
+        <button onclick="calculateEquals()" class="item-row5 item18">=</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
